@@ -8,9 +8,16 @@
     <title>Document</title>
 </head>
 <body>
+    
     <style>
+        .navbar-dark {
+  background-color: #512DA8; }
+        body {
+            padding: 50px 0px 0px 0px;
+            z-index: 0; 
+        }
         body{
-            background: black;   
+            background: rgb(105, 102, 102);   
 
         }
         h3,label{
@@ -18,9 +25,53 @@
         }
     </style>
     <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Search report</a></li>
+                        <li class="nav-item "><a class="nav-link" href="./aboutus.html"><i class="fa fa-info fa-lg"></i> View report</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li> -->
+                    </ul>
+                    <span class="navbar-text">
+                        <a id="login">
+                            <span class="fa fa-sign-in"></span> Login</a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="col-12">
+                <h3>Search your report here</h3>
+            </div>
+            <form>
+                <div class="form-group row">
+                    <label for="firstname" class="col-md-2 col-form-label ">Token No.</label>
+                    <div class="col-md-5">
+                        <input class="form-control" type="text" name="token" id="token" placeholder="Token No.">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="firstname" class="col-md-2 col-form-label ">Mobile No.</label>
+                    <div class="col-md-5">
+                        <input class="form-control" type="text" name="Mobileno" id="Mobileno" placeholder="Mobile No.">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-md-2 col-8">
+                        <button type="submit" class="btn btn-primary">Search </button>
+                    </div>
+                </div>
+            </form>
+        </div>
         <!-- <div class="row row-content"> -->
             <div class="col-12">
-                <h3>Send us your Grievance</h3>
+                <h3>Send us your Updated Grievance</h3>
             </div>
             <div class="col-12 col-md-9">
                 <form>
